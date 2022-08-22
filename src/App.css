@@ -1,4 +1,7 @@
 .App {
+  display: flex;
+  justify-content: center;
+  margin-top: 20vh;
   text-align: center;
 }
 
@@ -35,4 +38,25 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+table, th, td {
+  border: 1px solid;
+}
+
+ td, th {
+  padding: 10px;
+
+}
+
+th {
+  background-color: #c8d1d3;
+}
+
+ td {
+  background-color: #d5f6ff;
+}
+
+.airline-row{
+  background-color: #d6d6d6;
 }
