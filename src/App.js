@@ -16,12 +16,12 @@ function App() {
   }, [])
 
   const handleChange = (event, index) =>{
-    setCheckedInput(checkedInput => !checkedInput)
-    console.log(event.target.className)
-   if(aviationId[index] === index){
-
-    return event.target.checked
-   } else {
+    if(aviationId[index] === index){
+      
+      setCheckedInput(true)
+      return event.target.checked
+    } else {
+     setCheckedInput(false )
     return !event.target.checked
    }
   }
@@ -73,7 +73,7 @@ useEffect(()=>{
         <tbody >
       {
         Object.keys(data.data.airlines).map((airline,index) => (
-           <tr className={checkedInput ? "active-row" : ""} key={index}>
+           <tr className={checkedInput ? "airline-row": ""} key={index}>
             <td>
            <h2>{data.data.airlines[airline].name}</h2>
            </td>
@@ -81,7 +81,7 @@ useEffect(()=>{
           <h3>{data.data.airlines[airline].callsign}</h3>
           </td>
           <td >
-          <input id={index} type="checkbox" name={data.data.airlines[airline].name} onChange={(event)=> {
+          <input  id={index} type="checkbox"  name={data.data.airlines[airline].name} onChange={(event)=> {
             handleChange(event, aviationId[index])            
           }} />
           </td>
