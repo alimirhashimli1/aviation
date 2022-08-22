@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/aviation/static/css/main.51fb0fe7.css",
+    "main.js": "/aviation/static/js/main.27461b61.js",
+    "static/js/787.28cb0dcd.chunk.js": "/aviation/static/js/787.28cb0dcd.chunk.js",
+    "static/media/logo.svg": "/aviation/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/aviation/index.html",
+    "main.51fb0fe7.css.map": "/aviation/static/css/main.51fb0fe7.css.map",
+    "main.27461b61.js.map": "/aviation/static/js/main.27461b61.js.map",
+    "787.28cb0dcd.chunk.js.map": "/aviation/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.51fb0fe7.css",
+    "static/js/main.27461b61.js"
+  ]
+}
